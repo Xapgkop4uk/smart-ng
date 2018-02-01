@@ -1,0 +1,116 @@
+label {
+  vertical-align: top;
+}
+
+.in-place-edit{
+  border: 2px solid black;
+  height: 30px;
+  min-width: 80%;
+  padding: 5px;
+}
+
+.ng-scope{
+    margin: auto;
+    width:600px;
+}
+.buttons{
+    display: inline-block;
+    width: 600px;
+}
+button{
+    width:100px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.checkin{
+    background: #3633f5;
+    color:#FFFFFF;
+
+}
+.checkin:hover{
+    background: #1512d1;
+}
+.checkin:active{
+    background: #0c09b4; 
+}
+.save{
+    background: #efff08; 
+    color:rgb(0, 0, 0);
+}
+.save:hover{
+    background: #f2f533;
+}
+.save:active{
+    background: #f1ee0d;
+}
+
+.discard{
+    background: #f82727;
+    color:#FFFFFF;
+
+}
+.discard:hover{
+    background: #ce1111;
+}
+.discard:active{
+    background: #990202; 
+}
+
+.accept{
+    background: #53f533;
+    color:rgb(0, 0, 0);
+
+}
+.accept:hover{
+    background: #38d112;
+}
+.accept:active{
+    background: #09b43c; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 15px;
+
+    /* Position the tooltip */
+    position: absolute;
+    top: -45px;
+    left:-10px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.value-data {
+    white-space: pre-wrap;
+}
+
+inc{
+    font-weight: bold;
+}
+del{
+    font-size: 0;
+    visibility: hidden;
+}
