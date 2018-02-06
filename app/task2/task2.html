@@ -1,0 +1,16 @@
+<div class="card">
+    <h3>Task 2</h3>
+    <p><ol>Make each of the now clickable buttons make a POST to the dummy url https://testing.smashdocs.net/documents/12345/ &lt;action &gt;</code>, where action is either (checkin, save, discard, accept, decline)</p>
+    <li>Send the current state of the ContentEditable in the POST. E.g. {"content":" &lt;inc&gt;here&lt;/inc&gt; &lt;inc&gt;is&lt;/inc&gt; &lt;inc&gt;some&lt;/inc&gt; &lt;inc&gt;text&lt;/inc&gt;"}
+    <li>Log the response to the console</li>
+    <li>	Style the buttons / page a little bit to show off some design skills. Doesn't have to be any- thing super fancy. You are welcome to use Bootstrap, Foundation, or any other libraries li- ke Fontawesome if you choose to do so.</li></ol></p>
+    <h3>Result:</h3>
+    <label>Input same text:</label>
+    <p contenteditable="true" content-edit class="in-place-edit data-value" ng-model="source" strip-br></p>
+    <br/>
+    <label>After filtering:</label>
+    <p ng-model="result">{{source | tagsFilter}}</p>
+    <div class="result-preview">
+        <button ng-repeat="btn in buttons" class="tooltip {{btn}}" ng-click=post({action:btn})> <span class="tooltiptext">Tooltip for {{btn}}</span> {{btn}}</button>
+    </div>
+</div>

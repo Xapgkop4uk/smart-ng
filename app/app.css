@@ -1,0 +1,106 @@
+/* app css stylesheet */
+html{
+  font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  background: #E1E2E1;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.in-place-edit{
+  border: 1px solid  #004a3f;
+  background:white;
+  min-height: 30px;
+  min-width: 80%;
+  padding: 5px;
+}
+
+del{
+  text-decoration: unset;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:#007769;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  left:-15px;
+  bottom:40px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+button{
+  width: 100px;
+  min-height: 30px;
+  background: #48a697;
+  margin: 5px;
+  color:white;
+  border:2px solid #007769;
+}
+button:hover{
+  background: #007769
+}
+button:active{
+  background: #004a3f
+}
+li{
+  margin-left: 20px;
+}
+ol{
+  padding: 0;
+}
+
+input{
+  width: 75%;
+  height: 30px;
+  border: 1px solid  #004a3f;
+  background:white;
+  min-height: 30px;
+}
+label{
+  display: flex;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  border-top:0.5em solid #004a3f;
+  margin: 0;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em ;
+  background: #007769;
+  color:white;
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  padding-right: 0.3em;
+}
+
+.card {
+  margin: auto;
+  min-width: 600px;
+  max-width: 60%;
+}

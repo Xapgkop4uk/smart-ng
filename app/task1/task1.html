@@ -1,0 +1,11 @@
+<div class="card">
+    <h3>Task 1</h3>
+    <p>Turn the text 'checkin | save | discard | accept | decline' into clickable buttons with a small tooltip text</p>
+    <h3>Result:</h3>
+    <label>Input string with delemiters:</label>
+    <input ng-model="actions"><button ng-click="create()">Create!</button>
+    <div class="result-preview">
+        <button ng-repeat="btn in buttons" class="tooltip {{btn}}"> <span class="tooltiptext">Tooltip for {{btn}}</span> {{btn}}</button>
+    </div>
+</div>
+
