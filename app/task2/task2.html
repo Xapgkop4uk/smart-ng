@@ -11,6 +11,6 @@
     <label>After filtering:</label>
     <p ng-model="result">{{source | tagsFilter}}</p>
     <div class="result-preview">
-        <button ng-repeat="btn in buttons" class="tooltip {{btn}}" ng-click=post({action:btn})> <span class="tooltiptext">Tooltip for {{btn}}</span> {{btn}}</button>
+        <button ng-repeat="btn in buttons" class="tooltip {{btn}}" ng-click="post({{btn}})"> <span class="tooltiptext">Tooltip for {{btn}}</span> {{btn}}</button>
     </div>
 </div>

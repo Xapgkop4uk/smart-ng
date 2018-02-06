@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('myApp.contentEdit.contentEdit-directive', [])
 
@@ -10,12 +10,10 @@ angular.module('myApp.contentEdit.contentEdit-directive', [])
         
      function read() {
         const item = element[0].querySelector('del');
-        if(!item)
-        {
-          var filterResult = $filter('tagsFilter')(element.html())    
-          ngModel.$setViewValue(filterResult);  
-          element.html(filterResult);
-        }
+        if(!!item) return;
+        let filterResult = $filter('tagsFilter')(element.html());    
+        ngModel.$setViewValue(filterResult);  
+        element.html(filterResult);
       }
       
       ngModel.$render = function () {
@@ -33,5 +31,5 @@ angular.module('myApp.contentEdit.contentEdit-directive', [])
         if (!!item) item.style.display = 'none';
       });
     }
-  }
+  };
 });

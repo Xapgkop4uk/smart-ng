@@ -17,6 +17,5 @@ angular.module('myApp.task1', ['ngRoute'])
     $scope.actions.trim().split('|').forEach(element=>{
       $scope.buttons.push(element);
     });
-    console.log($scope.buttons);
-  }
+  };
 }]);
