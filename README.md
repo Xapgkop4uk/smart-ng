@@ -1,7 +1,15 @@
 # Smart-ng
 test task for Smartbics
 
-# gitHub pages
+## Instal 
 
-also you can show this progect on https://xapgkop4uk.github.io
+clone
+
+npm install
+
+npm start
+
+## gitHub pages
+
+also you can see this project on https://xapgkop4uk.github.io
 
