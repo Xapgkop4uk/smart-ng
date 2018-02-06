@@ -14,7 +14,7 @@ angular.module('myApp.task2', ['ngRoute'])
   $scope.buttons = ['checkin', 'save', 'discard', 'accept', 'decline'];  
   var url = "https://testing.smashdocs.net/documents/12345/";
 
-  $scope.post = function(obj){
+  $scope.post = function(action){
     var data = JSON.stringify({
       content: $scope.source
     });
@@ -25,7 +25,7 @@ angular.module('myApp.task2', ['ngRoute'])
       }
     };   
 
-    $http.post(url+obj.action, data, config)
+    $http.post(url+action, data, config)
     .then(function(response){
       console.log(response);
     })
