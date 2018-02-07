@@ -9,7 +9,7 @@ angular.module('myApp.contentEdit.contentEdit-filter', [])
         let arr = cleanText.split(' ').filter(element=>element!='');
 
         arr.forEach(item => {
-          item = '<inc>'+item+'</inc>';
+          item = '<ins>'+item+'</ins>';
           newString+=" "+item;
         });
         return newString;     
