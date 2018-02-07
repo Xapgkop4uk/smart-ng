@@ -21,7 +21,7 @@ angular.module('myApp.task2', ['ngRoute'])
 
     var config = {
       headers : {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
     };   
 
