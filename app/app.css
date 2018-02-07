@@ -24,6 +24,12 @@ a{
 
 del{
   text-decoration: unset;
+  color:rgb(150, 0, 0)
+}
+
+ins{
+  text-decoration: unset;
+  color:#1106a7;
 }
 
 /* Tooltip text */
