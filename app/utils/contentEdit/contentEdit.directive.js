@@ -34,6 +34,12 @@ angular.module('myApp.contentEdit.contentEdit-directive', [])
         const item = element[0].querySelector('del');
         if (!!item) item.style.display = 'none';
       });
+      
+      element.bind("blur", function () {
+        const item = element[0].querySelector('del');
+        if (!!item) item.style.display= 'unset';
+        scope.$apply(read);       
+      });
 
       function moveCaret(){
 
