@@ -4,6 +4,9 @@
     <li>When clicking inside the ContentEditable, words which are inside  &lt;del&gt; tags are hidden</li>
     <li>When clicking back out of the ContentEditable redisplay the words inside the <del> tags</li></ol></p>
     <h3>Result:</h3>
+    <label>Replace data with tags:</label>
+    <input ng-model="data"><button ng-click="push()">Replace!</button>
+    <br/>
     <p contenteditable="true" content-edit class="in-place-edit data-value" ng-model="source" strip-br></p>
     <br/>
 </div>

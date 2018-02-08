@@ -10,5 +10,10 @@ angular.module('myApp.task3', ['ngRoute'])
 }])
 
 .controller('Task3Ctrl', ['$scope','$http', function($scope, $http) {
+  $scope.data ="";
   $scope.source =" This is some <del>deleted and hidden</del> text";
+
+  $scope.push = function(){
+    $scope.source = $scope.data;
+  }
 }]);
