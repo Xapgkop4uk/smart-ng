@@ -25,10 +25,8 @@ angular.module('myApp.contentEdit.contentEdit-directive', [])
       
       element.bind("keyup paste", function () {
         window.clearTimeout(timer);
-        timer = setTimeout(function(){const item = element[0].querySelector('del');
-        if (!!item) item.style.display= 'unset';
-        scope.$apply(read);
-      },500)});
+        timer = setTimeout(function(){scope.$apply(read);},500);
+      });
       
       element.bind("focus", function () {
         const item = element[0].querySelector('del');
